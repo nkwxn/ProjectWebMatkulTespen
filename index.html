@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testing Access Database: Intro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+            <li class="title" style="float: left;">Laporan Testing Access Database</li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="result.html">Conclusion</a></li>
+            <li><a href="index.html">Intro</a></li>
+        </ul>
+    </div>
+    <div id="article">
+        <h1>Introduction</h1>
+        <p>Hai semuanya! Kami, mahasiswa Binus University sedang melakukan project <i>Testing and System Implementation</i>. Pada project ini, kami akan menguji <i>database</i> yang kita telah buat dengan menggunakan <i>Microsoft Access</i>. Dalam <i>testing</i> ini, kami menggunakan metode pengujian <i>Repetition Testing</i>.Dibawah ini, kami melampirkan sebuah <i>mind map</i> yang akan kami lampirkan pada gambar di bawah ini:</p>
+        <img src="captures/MindmapTesting.png">
+        <h1>Testing Activities</h1>
+        <p>Pertama-tama, kami membuat tabel dan field di dalam <i>database</i>. Dengan keterangan <i>field</i> sebagai berikut:</p>
+        <img src="captures/02.png">
+        <p>Setelah membuat tabel dan field, kami mencoba untuk mengisi 1 row dalam tabel yang kita telah buat, dengan keterangan gambar sebagai berikut:</p>
+        <table>
+            <tr>
+                <td style="width: 70%"><img src="captures/03.png"></td>
+                <td style="width: 30%"><p>Saat memasukkan 1 row kedalam database, kami mencoba untuk mengisi field dengan isi yang berbeda dari ketentuan tipe data yang telah ditentukan saat membuat table. Pada gambar disamping, kami mengisi data menggunakan huruf, tetapi ketentuan tipe data yang kami buat menggunakan tipe data <i>Date</i>. Selain field tanggal lahir, kami juga melakukan pengetesan terhadap field-field lainnya yang kami sudah buat ketentuan validasinya. Seperti: NIM dan alamat email.</p></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td style="widows: 30%;"><p>Pada pengetesan berikutnya, kami melakukan testing <i>field validation</i> pada field NIM, dimana panjang karakter untuk NIM harus 10 digit. Field tersebut menggunakan variabel varchar(10) dimana panjang karakter yang di input tidak dapat lebih dari 10. Yang kita lakukan pada fase ini adalah coba untuk input NIM dengan panjang karakter dibawah 10. Saat kami menekan tombol <i>Enter</i>, maka muncul <i>Error message</i> yang mengingatkan bahwa panjang karakter NIM harus 10 digit.</p></td>
+                <td style="width: 70%;"><img src="captures/04.png"></td>
+            </tr>
+        </table>
+        <p>Untuk field email, kami menggunakan <i>validation rule</i> bahwa alamat email harus mengandung karakter '@'' dan '.'. Jika tidak ada kedua karakter tersebut maka akan muncul error window seperti dibawah ini:</p>
+        <table>
+            <tr>
+                <td><img src="captures/05.png"></td>
+                <td><img src="captures/06.png"></td>
+            </tr>
+            <tr>
+                <td><p>Pada test pertama, kami mencoba untuk melakukan pengetesan dengan memasukan alamat email tanpa kedua simbol '@' dan '.' yang menyebabkan munculnya error window yang mengingatkan bahwa email harus memiliki karakter @ dan .</p></td>
+                <td><p>Pada test kedua, kami mencoba untuk melakukan pengetesan dengan memasukkan alamat email dengan simbol '@' namun tidak menulis simbol '.' pada alamat email yang membuat keluarnya error window yang sama. </p></td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer">
+        <p>&copy Created by Nicholas and team.</p>
+        <p>written in HTML, CSS</p>
+    </div>
+</body>
+</html>

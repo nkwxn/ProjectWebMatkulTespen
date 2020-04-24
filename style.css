@@ -1,0 +1,82 @@
+body{
+    background-color: darkkhaki;
+    font-family: 'Segoe UI';
+}
+img{
+    width: 100%;
+    display: block;
+}
+#navbar ul{
+    background-color: crimson;
+    border-radius: 12px;
+    padding: 0 10px 0 10px;
+    margin: 0 auto 0 auto;
+    top: 0;
+    overflow: hidden;
+    list-style-type: none;
+    max-width: 1000px;
+}
+#navbar li{
+    float: right;
+}
+#navbar li a{
+    padding: 10px;
+    color: white;
+    font-size: 16pt;
+    text-decoration: none;
+    display: block;
+}
+#navbar li a:hover{
+    color: black;
+    background-color: cornsilk;
+    border-radius: 12px;
+    padding: 10px;
+}
+.title{
+    padding: 10px;
+    color: white;
+    font-size: 16pt;
+    text-decoration: none;
+    display: block;
+}
+#article{
+    background-color: cornsilk;
+    border-radius: 12px;
+    padding: 0 10px 0 10px;
+    margin: 5px auto 5px auto;
+    color: black;
+    border: 1px solid cornsilk;
+    max-width: 1000px;
+}
+.redButtonAccdb{
+    background-color: firebrick;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 0 auto 0 auto;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    max-width: 275px;
+    display: block;
+}
+#footer{
+    background-color: crimson;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 0 auto 5px auto;
+    max-width: 1000px;
+    color: white;
+}
+#footer p{
+    margin: 0;
+}
+.pMembers{
+    width: 100%; 
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+}
+.pMembers h3{
+    margin: 0;
+}
